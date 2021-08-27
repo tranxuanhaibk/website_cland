@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="templates.cland" template="/WEB-INF/templates/cland/inc/master.jsp">
+	<put-attribute name="header" value="/WEB-INF/templates/cland/inc/header.jsp"/>
+	<put-attribute name="sidebar" value="/WEB-INF/templates/cland/inc/sidebar.jsp"/>
+	<put-attribute name="footer" value="/WEB-INF/templates/cland/inc/footer.jsp"/>
+	<put-attribute name="content" value=""/>
+	</definition>
+	
+	<definition name="cland.maps" template="/WEB-INF/views/cland/map.jsp"/>
+	
+	<definition name="cland.index" extends="templates.cland">
+	<put-attribute name="content" value="/WEB-INF/views/cland/index.jsp"/>
+	</definition>
+	
+	<definition name="cland.search" extends="templates.cland">
+	<put-attribute name="content" value="/WEB-INF/views/cland/search.jsp"/>
+	</definition>
+	
+	<definition name="cland.cat" extends="templates.cland">
+	<put-attribute name="content" value="/WEB-INF/views/cland/cat.jsp"/>
+	</definition>
+	
+	<definition name="cland.contact" extends="templates.cland">
+	<put-attribute name="content" value="/WEB-INF/views/cland/contact.jsp"/>
+	</definition>
+	
+	<definition name="cland.single" extends="templates.cland">
+	<put-attribute name="content" value="/WEB-INF/views/cland/single.jsp"/>
+	</definition>
+	
+</tiles-definitions>
